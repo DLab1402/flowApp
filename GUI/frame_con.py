@@ -8,7 +8,7 @@ app = QApplication(sys.argv)
 flowApp = MainWindow()
 
 #Parameters
-link_lib = "G:\\My Drive\\Target_in_2024\\Project\\flow_app\\Lib"
+link_lib = "/home/tony/Project/Lib"
 
 
 #Support class
@@ -24,7 +24,7 @@ def load_tree():
         top = QTreeWidgetItem(flowApp.lib_list)
         top.setText(0, folder)
         #load the library list by read the descriptor file
-        libs = open(link_lib+"\\"+folder+"\\descriptor.txt",'r')
+        libs = open(link_lib+"/"+folder+"/descriptor.txt",'r')
         item_list = [line.strip() for line in libs]
         #add the element of the list as the subelement of the tree
         for subItem in item_list:
