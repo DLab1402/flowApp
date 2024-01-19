@@ -7,13 +7,13 @@ from PyQt5.QtGui import QDrag, QColor
 class CustumTree(QtWidgets.QTreeWidget):
     def __init__(self, parent):
         super().__init__(parent)
-        self.setDragEnabled(True)  # Added missing parentheses
-        self.setHeaderHidden(True)  # Optional: Hide the header for simplicity
-        self.setColumnCount(1)  # Optional: Set the number of columns
+        self.setDragEnabled(True)
+        self.setHeaderHidden(True)
+        self.setColumnCount(1)
         self.itemClicked.connect(self.create)
     
     def create(self,item,collumn):
-        print("ok123")
+        
 
 class Item(QtWidgets.QGraphicsItem):
     def __init__(self,parent,name):
