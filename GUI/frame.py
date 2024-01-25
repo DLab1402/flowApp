@@ -15,11 +15,11 @@ class CustumTree(QtWidgets.QTreeWidget):
     def create(self,item,collumn):
         
 
-class Item(QtWidgets.QGraphicsItem):
-    def __init__(self,parent,name):
+# class Item(QtWidgets.QGraphicsItem):
+#     def __init__(self,parent,name):
         
-        text_item = QtWidgets.QGraphicsTextItem(name, self)
-        text_item.setPos(25, 15)
+#         text_item = QtWidgets.QGraphicsTextItem(name, self)
+#         text_item.setPos(25, 15)
 
 class GraphicsView(QtWidgets.QGraphicsView):
     def __init__(self, parent):

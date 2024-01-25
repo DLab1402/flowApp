@@ -26,10 +26,10 @@ class add:
         self.take_sum()
 
 # test script
-a = add()
-a.set_input([1,2])
-a.process()
-a.NUM_IN = 10
-r = a.get_output()
-print(r)
-print(a.IN_LABEL[0])
+# a = add()
+# a.set_input([1,2])
+# a.process()
+# a.NUM_IN = 10
+# r = a.get_output()
+# print(r)
+# print(a.IN_LABEL[0])
